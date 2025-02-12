@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  clickhouse-server:
+    image: clickhouse/clickhouse-server:latest
+    ports:
+      - '8123:8123'
+      - '9000:9000'
+    volumes:
+      - ./db:/var/lib/clickhouse
+    ulimits:
+      nofile: 262144
+    environment:
+      CLICKHOUSE_USER : "Tima"
+      CLICKHOUSE_PASSWORD : "81252"
+
+
