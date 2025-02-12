@@ -1,0 +1,16 @@
+
+version: 2
+
+models:
+  - name: my_first_dbt_model
+    description: "Selects the names with the top 3 ranks within each craft."
+    columns:
+      - name: name
+      - name: rank
+        description: "The rank of the name within its craft, determined by the DENSE_RANK() function,
+        ordered by name in descending order. The rank is partitioned by craft,
+        meaning that each craft has its own ranking. Only the names with the top three 
+         ranks (1, 2, and 3) within each craft are included in the output."
+        data_tests:
+          - not_null
+

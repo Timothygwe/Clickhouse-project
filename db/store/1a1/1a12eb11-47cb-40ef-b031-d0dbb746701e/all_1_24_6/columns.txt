@@ -1,0 +1,4 @@
+columns format version: 1
+2 columns:
+`load_time` DateTime64(6)
+`json_data` String

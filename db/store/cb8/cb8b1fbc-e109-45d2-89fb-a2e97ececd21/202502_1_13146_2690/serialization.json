@@ -1,0 +1,1 @@
+{"columns":[{"kind":"Default","name":"code","num_defaults":0,"num_rows":74064},{"kind":"Default","name":"event_date","num_defaults":0,"num_rows":74064},{"kind":"Default","name":"event_time","num_defaults":0,"num_rows":74064},{"kind":"Sparse","name":"remote","num_defaults":74064,"num_rows":74064},{"kind":"Default","name":"value","num_defaults":0,"num_rows":74064}],"version":0}

@@ -1,0 +1,11 @@
+clickhouse_local:
+  target: dev
+  outputs:
+    dev:
+      type: clickhouse
+      schema: "dbt_Tim"
+      host: "localhost"
+      port: 8123
+      user: "Tima"
+      password: "81252"
+      secure: False
